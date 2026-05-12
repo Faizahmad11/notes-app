@@ -1,0 +1,171 @@
+/* ====================================
+   Reset Default Browser Styling
+==================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ====================================
+   Main Container
+==================================== */
+.container{
+    width: 100%;
+    min-height: 100vh;
+
+    /* Background Gradient */
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+
+    color: #fff;
+
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+
+/* ====================================
+   Heading
+==================================== */
+.container h1{
+    display: flex;
+    align-items: center;
+
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+/* Heading Image */
+.container h1 img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+
+/* ====================================
+   Button Styling
+==================================== */
+.container button{
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(#9418fd, #571094);
+
+    color: #fff;
+
+    border: none;
+    outline: none;
+
+    padding: 15px 25px;
+
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    margin: 30px 0 20px;
+
+    transition: 0.3s;
+}
+
+
+/* Button Hover Effect */
+.container button:hover{
+    transform: scale(1.05);
+}
+
+
+/* Button Image */
+.container button img{
+    width: 25px;
+    margin-right: 8px;
+}
+
+
+/* ====================================
+   Notes Container Grid Layout
+==================================== */
+.notes-container{
+    display: grid;
+
+    /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0fr));
+
+    gap: 20px;
+
+    width: 90%;
+}
+
+
+/* ====================================
+   Input Box
+==================================== */
+/* ====================================
+   Input Box
+==================================== */
+.input-box{
+    position: relative;
+
+    min-height: 150px;
+
+    background: #fff;
+    color: #333;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    /* Blinking cursor ka color */
+    caret-color: #571094;
+}
+
+
+
+/* ====================================
+   Text Icon
+==================================== */
+.input-box::before{
+    content: "📝";
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    font-size: 20px;
+}
+
+
+
+/* Text ko icon se door karne ke liye */
+.input-box{
+    padding-top: 45px;
+}
+
+/* Delete Icon */
+.input-box img{
+    width: 25px;
+
+    position: absolute;
+
+    bottom: 15px;
+    right: 15px;
+
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+/* Hover Effect on Delete Icon */
+.input-box img:hover{
+    transform: scale(1.2);
+}
